@@ -1,0 +1,32 @@
+.container-grid-area {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: ". menu-area ." ". content-area .";
+}
+
+.menu-area {
+  grid-area: menu-area;
+}
+
+.content-area {
+  grid-area: content-area;
+}
+
+h1 {
+  margin-bottom: 0;
+  color: #a0a0a0;
+}
+nav button {
+  padding: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 10px 10px 0 0;
+  display: inline-block;
+  background-color: #e8e8e8;
+  color: #3d3d3d;
+  border-radius: 4px;
+}
+nav button:hover, nav button.active {
+  color: #67baeb;
+}
